@@ -115,6 +115,86 @@ nav ul li {
     margin: 0 10px;
 }
 
+
+
 /* Add styles for product, newsletter, and footer sections */
 
-/* ... */
+/* FOOTER */
+
+.container {
+    margin-top: auto;
+    display: flexbox;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 940px;
+    margin: 0 auto;
+    text-align: left;
+
+    flex-wrap: wrap;
+
+    flex-direction: column;
+
+    padding: 60px 10%;
+}
+.footer-nav{
+    list-style: none;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+
+    }
+
+    .footer-links {
+        width: max-content;
+        margin: 0 auto;
+        color: white;
+        }
+        
+    ul.footer-links {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: row nowrap;
+        gap: 2em;
+        flex-wrap: wrap;
+        width: fit-content;
+        text-align: center;
+        padding: 0;
+        position: relative;
+        font-size: 1.75em;
+        letter-spacing: -0.05em;
+        list-style: none;
+        transition: all 0.3s ease-in-out;
+        overflow: hidden;
+}
+        li a {
+            display: flex;
+            flex: content;
+            padding: 1em;
+            font-size: 1rem;
+            letter-spacing: 0.5px;
+            line-height: 1;
+            text-decoration: none;
+            color:black;
+            opacity: 20;
+            transition: all 0.3s linear;
+            cursor: pointer;
+            }
+            li a:hover {
+                transform: translateY(-2px);
+                opacity: 1;
+                color: rgb(163, 163, 163);
+                }
+
+
+footer a {
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    transition: all .4s ease-in-out;
+    }
+    footer span{
+        width: fit-content;
+        }
+
+}
