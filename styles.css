@@ -12,15 +12,19 @@ header {
 }
 
 body {
+    background-image: image();
     font-size : 1rem!important ;
     margin: 0px !important;
     font-family: 'Poppins', sans-serif;
 
  }
 
+ /* lOGO */
 .logo {
     font-size: 24px;
 }
+
+/* NAVBAR */
 
 .desktop-nav {
     display: flex;
@@ -81,6 +85,15 @@ body {
     font-size: 3rem;
     font-weight: bold;
 
+}
+
+/* PRODUCTS SECTION */
+
+.product image{
+    height: 400px;
+    width: 30px;
+    margin: auto 0;
+    border-radius: 50%;
 }
 
 nav ul {
