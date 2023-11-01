@@ -12,7 +12,6 @@ header {
 }
 
 body {
-    background-image: image();
     font-size : 1rem!important ;
     margin: 0px !important;
     font-family: 'Poppins', sans-serif;
@@ -119,16 +118,14 @@ nav ul li {
 
 /* Add styles for product, newsletter, and footer sections */
 
+
 /* FOOTER */
 
 .container {
-    margin-top: auto;
-    display: flexbox;
     justify-content: space-between;
-    width: 80%;
     max-width: 940px;
     margin: 0 auto;
-    text-align: left;
+ 
 
     flex-wrap: wrap;
 
@@ -136,7 +133,7 @@ nav ul li {
 
     padding: 60px 10%;
 }
-.footer-nav{
+.container{
     list-style: none;
     color: #fff;
     text-align: center;
@@ -167,7 +164,7 @@ nav ul li {
         transition: all 0.3s ease-in-out;
         overflow: hidden;
 }
-        li a {
+         li a.footer-links {
             display: flex;
             flex: content;
             padding: 1em;
@@ -193,32 +190,18 @@ footer a {
     text-decoration: none;
     transition: all .4s ease-in-out;
     }
-    footer span{
-        width: fit-content;
+    @media (max-width: 992px) {
+        footer {
+            padding: 60px 10% 60px 10%;
         }
-        footer p {
-            text-align: center;
-            display: flex;
-            position: relative;
-            top: -8px;
-            left: 7px;
-            font-weight: bold;
-            letter-spacing: 3px;
-            line-height: 2em;
-            font-family: 'Raleway', sans-serif;
-            }
-            @media (max-width: 992px) {
-                footer {
-                    padding: 60px 10% 60px 10%;
-                    }
-                    }
-                    @media (min-width: 992px){
-                        footer {
-                            justify-content: space-between;
-                            align-items: center;
-                            flex-direction: column;
-                            }
-                            footer div {
-                                max-width: 100%;
-                                }
+    }
+    @media (min-width: 992px){
+        footer {
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
         }
+        footer div {
+            max-width: 100%;
+        }
+    }
