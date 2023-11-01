@@ -1,4 +1,5 @@
-/* Add your CSS styles here */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
 
 /* Example styles for the header */
 header {
@@ -10,8 +11,76 @@ header {
     align-items: center;
 }
 
+body {
+    font-size : 1rem!important ;
+    margin: 0px !important;
+    font-family: 'Poppins', sans-serif;
+
+ }
+
 .logo {
     font-size: 24px;
+}
+
+.desktop-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background:white!important ;
+    z-index: 999;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 7px 14px;
+    transition:.5s linear;
+    height: 17vh;
+}
+
+.desktop-nav-links {
+    text-decoration: none;
+    list-style: none;
+    padding: 0 1rem;
+    position: relative;
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #3c3c3c;
+    text-align: center;    
+    display: flex;
+    gap: -1rem;
+    flex-direction: row;
+    justify-content: center;
+    width: 95%;
+}
+.desktop-nav-links a {
+
+    text-decoration:none ;
+    color: black;
+    text-decoration-color: white;
+    transition: background-color 0.3s;
+    display: inline-flex;
+    width: fit-content;
+    flex-grow: 1;
+    flex-basis: auto;
+    flex-shrink: 1;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    border-bottom: transparent solid 6px;
+    position: relative;
+    
+
+}
+
+ a:hover {
+    color: grey;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: rgb(181, 181, 181);
+}
+
+.desktop-nav logo {
+    font-size: 3rem;
+    font-weight: bold;
+
 }
 
 nav ul {
