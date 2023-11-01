@@ -96,6 +96,16 @@ body {
     border-radius: 50%;
 }
 
+.thumbnails {
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding: 20px 0;
+    gap: 10px;
+    height: ;
+    width: ;
+}
+
 nav ul {
     list-style: none;
     display: flex;
