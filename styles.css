@@ -196,5 +196,29 @@ footer a {
     footer span{
         width: fit-content;
         }
-
-}
+        footer p {
+            text-align: center;
+            display: flex;
+            position: relative;
+            top: -8px;
+            left: 7px;
+            font-weight: bold;
+            letter-spacing: 3px;
+            line-height: 2em;
+            font-family: 'Raleway', sans-serif;
+            }
+            @media (max-width: 992px) {
+                footer {
+                    padding: 60px 10% 60px 10%;
+                    }
+                    }
+                    @media (min-width: 992px){
+                        footer {
+                            justify-content: space-between;
+                            align-items: center;
+                            flex-direction: column;
+                            }
+                            footer div {
+                                max-width: 100%;
+                                }
+        }
